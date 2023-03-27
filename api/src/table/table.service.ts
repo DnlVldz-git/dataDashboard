@@ -17,8 +17,9 @@ export class TableService {
     return res;
   }
 
-  findAll() {
-    return `This action returns all table`;
+  async findAll() {
+    const res = await this.tableRepository.find();
+    return res;
   }
 
   findOne(id: number) {
