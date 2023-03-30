@@ -11,8 +11,7 @@ export class TableService {
     @InjectRepository(Table)
     private readonly tableRepository: Repository<Table>,
   ) {}
-  async create(createTableDto: CreateTableDto) {
-    console.log(createTableDto);
+  async create(createTableDto: CreateTableDto) {    
     const res = await this.tableRepository.save(createTableDto);
     return res;
   }

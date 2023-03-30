@@ -1,1 +1,0 @@
-# Para que la carpeta se reconosca como un paquete de python
